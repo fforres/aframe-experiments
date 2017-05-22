@@ -1,0 +1,19 @@
+{
+  "name": "aframe_tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "postinstall": "./node_modules/.bin/copy node_modules/aframe/build/*.js ./src/vendors/",
+    "deploy": "gh-pages -d src"
+  },
+  "dependencies": {
+    "aframe": "^0.5.0",
+    "connect": "^3.6.2",
+    "copy": "^0.3.0",
+    "gh-pages": "^1.0.0",
+    "livereload": "^0.6.2",
+    "serve-static": "^1.12.3"
+  }
+}
