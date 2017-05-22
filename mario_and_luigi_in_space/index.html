@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="../vendors/aframe.js" charset="utf-8"></script>
+    <title>HI</title>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="objectM" src="./MarioandLuigi/mario_obj.obj" />
+        <a-asset-item id="materialM" src="./MarioandLuigi/mario_obj.mtl" />
+        <a-asset-item id="objectL" src="./MarioandLuigi/Luigi_obj.obj" />
+        <a-asset-item id="materialL" src="./MarioandLuigi/Luigi_obj.mtl" />
+        <img id="roofTexture" src="assets/roof.jpg" />
+        <img id="sky" src="assets/pano2.jpg" />
+      </a-assets>
+      <!-- <a-box
+        width="30"
+        height="47"
+        depth="1"
+        position="-16.9 8 -50"
+        rotation="45 90 0"
+        scale="1 1 1"
+        src="#roofTexture"
+        id="firstBox"
+      ></a-box>
+      <a-box
+        width="30"
+        height="47"
+        depth="1"
+        position="16.9 8 -50"
+        rotation="-45 90 0"
+        scale="1 1 1"
+        src="#roofTexture"
+      ></a-box> -->
+      <a-obj-model src="#objectM" mtl="#materialM" />
+      <a-obj-model src="#objectL" mtl="#materialL" />
+      <a-camera position="0 100 200">
+        <a-cursor color="red" />
+      </a-camera>
+      <a-sky src="#sky"/>
+    </a-scene>
+    <script type="text/javascript">
+      const box = document.querySelectorAll('a-box');
+      Array.from(box).forEach(el => {
+        // el.addEventListener("mouseenter", function() {
+        //   el.setAttribute("scale", {x: 0.5, y: 2, z: 5.9})
+        // })
+        // el.addEventListener("mouseleave", function() {
+        //   el.setAttribute("scale", {x: 1, y: 1, z: 1})
+        // })
+      })
+    </script>
+  </body>
+</html>
