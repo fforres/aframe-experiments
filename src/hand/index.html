@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="../vendors/aframe.js" charset="utf-8"></script>
+    <title>HI</title>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="objectHand" src="./hand/just some hands.obj" />
+        <a-asset-item id="materialHand" src="./hand/just some hands.mtl" />
+        <img id="sky" src="assets/pano2.jpg" />
+      </a-assets>
+      <a-entity position="0 1 -1">
+        <a-obj-model src="#objectHand" mtl="#materialHand"/>
+      </a-entity>
+      <a-camera position="0 0 0">
+        <a-cursor color="red" />
+      </a-camera>
+      <a-sky src="#sky"/>
+    </a-scene>
+    <script type="text/javascript">
+    </script>
+  </body>
+</html>

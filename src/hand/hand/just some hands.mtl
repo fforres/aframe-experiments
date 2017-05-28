@@ -1,0 +1,19 @@
+#
+# Wavefront material file
+# Created with Kaydara FBX
+#
+
+newmtl Material_004__HAND_Low_N_png
+map_Kd HAND_S.jpg
+Ka 1.000000 1.000000 1.000000
+Kd 0.569828 0.450528 0.382218
+illum 1
+Tr 1.000000
+
+newmtl unnamed
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+illum 2
+Ns 12.300000
+Tr 1.000000

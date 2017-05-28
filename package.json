@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./src/index.js",
-    "postinstall": "./node_modules/.bin/copy node_modules/aframe/build/*.js ./src/vendors/",
+    "postinstall": "./node_modules/.bin/copy node_modules/aframe/build/*.js ./src/vendors/ && ./node_modules/.bin/copy node_modules/aframe-extras/dist/aframe-extras.j* ./src/vendors/",
     "deploy": "gh-pages -d src"
   },
   "dependencies": {

@@ -10,6 +10,19 @@ acorn@^4.0.3:
   version "4.0.11"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.11.tgz#edcda3bd937e7556410d42ed5860f67399c794c0"
 
+aframe-extras@^3.8.3:
+  version "3.8.3"
+  resolved "https://registry.yarnpkg.com/aframe-extras/-/aframe-extras-3.8.3.tgz#31c3e41c6dd7c28b2eeee4bc929360dea72b7dba"
+  dependencies:
+    aframe-physics-system "^1.4.0"
+
+aframe-physics-system@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/aframe-physics-system/-/aframe-physics-system-1.4.0.tgz#2831a61265876b9237bc4ce3662c72c136605ae5"
+  dependencies:
+    cannon "github:donmccurdy/cannon.js#v0.6.2-dev1"
+    three-to-cannon "^1.0.5"
+
 aframe@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/aframe/-/aframe-0.5.0.tgz#c6335cad86ee7a731062415b718da79e764e96ef"
@@ -382,6 +395,10 @@ camelcase@^1.0.2:
 camelcase@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-3.0.0.tgz#32fc4b9fcdaf845fcdf7e73bb97cac2261f0ab0a"
+
+"cannon@github:donmccurdy/cannon.js#v0.6.2-dev1":
+  version "0.6.2"
+  resolved "https://codeload.github.com/donmccurdy/cannon.js/tar.gz/022e8ba53fa83abf0ad8a0e4fd08623123838a17"
 
 caseless@~0.11.0:
   version "0.11.0"
@@ -3288,6 +3305,10 @@ three-buffer-vertex-data@^1.0.0:
   resolved "https://registry.yarnpkg.com/three-buffer-vertex-data/-/three-buffer-vertex-data-1.1.0.tgz#cf228e78427665884b961a4cabe1f85ed39f82b1"
   dependencies:
     flatten-vertex-data "^1.0.0"
+
+three-to-cannon@^1.0.5:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/three-to-cannon/-/three-to-cannon-1.1.0.tgz#f8ca9012bbdf2c85f9c5928981235fbd25193e81"
 
 three@^0.83.0:
   version "0.83.0"
