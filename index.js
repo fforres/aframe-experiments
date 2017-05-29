@@ -8,10 +8,11 @@ server.listen(3000);
 
 var livereload = require('livereload');
 var lrServer = livereload.createServer();
-console.log(path.resolve(__dirname,'./1'))
 lrServer.watch([
   __dirname,
-  path.resolve(__dirname,'./1')
+  path.resolve(__dirname,'./hand'),
+  path.resolve(__dirname,'./blenderscene'),
+  path.resolve(__dirname,'./mario_and_luigi_in_space'),
 ]);
 
 console.log('open http://localhost:3000')
